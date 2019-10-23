@@ -1,2 +1,8 @@
 language: csharp
 solution: LBG.TalkingClock.sln
+install:
+  - nuget restore LBG.TalkingClock.sln
+  - nuget install NUnit.Console -Version 3.10.0 -OutputDirectory testrunner
+script:
+  - msbuild /p:Configuration=Debug LBG.TalkingClock.sln
+  - mono ./testrunner/NUnit.ConsoleRunner.3.9.0/tools/nunit3-console.exe ./TalkingClock_Tests/bin/Debug/TalkingClock_Tests.dll
