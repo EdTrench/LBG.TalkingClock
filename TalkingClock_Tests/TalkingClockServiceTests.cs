@@ -1,14 +1,14 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using NUnit.Framework;
 using TalkingClock.Services;
 
 namespace TalkingClock_Tests
 {
-    [TestClass]
+    [TestFixture]
     public class TalkingClockServiceTests
     {
         // todo: validation input parameter tests
 
-        [TestMethod]
+        [Test]
         public void TalkingClockService_ShouldReturnOneOClock()
         {
             // act
@@ -22,7 +22,7 @@ namespace TalkingClock_Tests
             Assert.AreEqual(result, "One o\'clock");
         }
 
-        [TestMethod]
+        [Test]
         public void TalkingClockService_ShouldReturnTwoOClock()
         {
             // act
@@ -36,7 +36,7 @@ namespace TalkingClock_Tests
             Assert.AreEqual(result, "Two o\'clock");
         }
 
-        [TestMethod]
+        [Test]
         public void TalkingClockService_ShouldReturnTwelveOClock()
         {
             // act
@@ -50,7 +50,7 @@ namespace TalkingClock_Tests
             Assert.AreEqual(result, "Twelve o\'clock");
         }
 
-        [TestMethod]
+        [Test]
         public void TalkingClockService_ShouldReturnOneOClockFromTwentyFourHourClock()
         {
             // act
@@ -64,7 +64,7 @@ namespace TalkingClock_Tests
             Assert.AreEqual(result, "One o\'clock");
         }
 
-        [TestMethod]
+        [Test]
         public void TalkingClockService_ShouldReturnElevenOClockFromTwentyFourHourClock()
         {
             // act
@@ -78,7 +78,7 @@ namespace TalkingClock_Tests
             Assert.AreEqual(result, "Eleven o\'clock");
         }
 
-        [TestMethod]
+        [Test]
         public void TalkingClockService_ShouldReturnTwelveOClockFromTwentyFourHourClock()
         {
             // act
@@ -92,7 +92,7 @@ namespace TalkingClock_Tests
             Assert.AreEqual(result, "Twelve o\'clock");
         }
 
-        [TestMethod]
+        [Test]
         public void TalkingClockService_ShouldReturnFivePastOne()
         {
             // act
@@ -106,7 +106,7 @@ namespace TalkingClock_Tests
             Assert.AreEqual(result, "Five past one");
         }
 
-        [TestMethod]
+        [Test]
         public void TalkingClockService_ShouldReturnTenPastOne()
         {
             // act
@@ -120,7 +120,7 @@ namespace TalkingClock_Tests
             Assert.AreEqual(result, "Ten past one");
         }
 
-        [TestMethod]
+        [Test]
         public void TalkingClockService_ShouldReturnTwentyFivePastOne()
         {
             // act
@@ -134,7 +134,7 @@ namespace TalkingClock_Tests
             Assert.AreEqual(result, "Twenty five past one");
         }
 
-        [TestMethod]
+        [Test]
         public void TalkingClockService_ShouldReturnHalfPastOne()
         {
             // act
@@ -148,7 +148,7 @@ namespace TalkingClock_Tests
             Assert.AreEqual(result, "Half past one");
         }
 
-        [TestMethod]
+        [Test]
         public void TalkingClockService_ShouldReturnTwentyFiveToTwo()
         {
             // act
@@ -162,7 +162,7 @@ namespace TalkingClock_Tests
             Assert.AreEqual(result, "Twenty five to two");
         }
 
-        [TestMethod]
+        [Test]
         public void TalkingClockService_ShouldReturnFiveToTwo()
         {
             // act
