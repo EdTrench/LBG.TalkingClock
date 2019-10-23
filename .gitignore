@@ -18,7 +18,6 @@ out
 packages
 previous_ndepend
 tmp
-app.config
 nlog.config
 web.config
 validFromGeneration.config
